@@ -1,0 +1,2 @@
+export const getFilterSelector = (state) => state.items.filter(item => item.name.toLowerCase().includes(state.filter.toLowerCase()))
+export const getItemsSelector = (state, id) => state.items.find(item => item.id === id)
